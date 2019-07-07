@@ -1,29 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
+    <link rel="stylesheet" href="LinkElement.css"/>
         <script>
-            function init(){
 
-                var canvas=document.getElementById("canvas");
-                var ctr=canvas.getContext("2d");
-
-                document.getElementById("focus").onkeydown=keydown;
-
-                var a = 0;
-                for(var i= 0; i<10;i++){
-                    a +=i;
-                }
-
-            }
-            function keydown(e){
-                //
-            }
-        
         </script>
         
     </head>
 
-    <body onload="init()">
+    <body>
+        <h1>HTMLの基礎</h1>
+            <p id="comment">
+                HTMLはタグを使って文書を構成します。
+            </p>
+            <ul>
+                <li class="even">見出し</li>
+                <li class="odd">パラグラフ</li>
+                <li class="even">箇条書き</li>
+                <li class="odd">表</li>
+            </ul>
+            <p>見た目はスタイルを使って指定します</p>
         
     </body>
 </html>
