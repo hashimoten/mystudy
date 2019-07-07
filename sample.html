@@ -1,8 +1,29 @@
 <!DOCTYPE html>
 <html>
-    <body>
+    <head>
+        <script>
+            function init(){
 
-        <h1 id="title">HTMLの基礎</h1>
+                var canvas=document.getElementById("canvas");
+                var ctr=canvas.getContext("2d");
+
+                document.getElementById("focus").onkeydown=keydown;
+
+                var a = 0;
+                for(var i= 0; i<10;i++){
+                    a +=i;
+                }
+
+            }
+            function keydown(e){
+                //
+            }
+        
+        </script>
+        
+    </head>
+
+    <body onload="init()">
+        
     </body>
-
 </html>
